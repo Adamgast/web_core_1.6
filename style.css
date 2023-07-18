@@ -353,7 +353,8 @@ a:hover {
 
 button {
   background-color: transparent;
-  border: none; }
+  border: none;
+  cursor: pointer; }
 
 .wrapper {
   min-height: 100%;
