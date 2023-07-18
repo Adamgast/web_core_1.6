@@ -49,6 +49,7 @@
 
 	&__open-burger {
 		margin-right: 16px;
+		cursor: pointer;
 		@media (min-width: 1365.98px) {
 			display: none;
 		}
@@ -168,6 +169,7 @@
 	}
 	&__close-burger {
 		margin-right: 17px;
+		cursor: pointer;
 		@media (min-width: 1365.98px) {
 			display: none;
 		}
