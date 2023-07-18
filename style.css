@@ -428,7 +428,8 @@ body {
       .header__container {
         min-height: 0px; } }
   .header__open-burger {
-    margin-right: 16px; }
+    margin-right: 16px;
+    cursor: pointer; }
     @media (min-width: 1365.98px) {
       .header__open-burger {
         display: none; } }
@@ -526,7 +527,8 @@ body {
     align-items: center;
     margin-bottom: 50px; }
   .header__close-burger {
-    margin-right: 17px; }
+    margin-right: 17px;
+    cursor: pointer; }
     @media (min-width: 1365.98px) {
       .header__close-burger {
         display: none; } }
