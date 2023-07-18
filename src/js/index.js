@@ -1,6 +1,7 @@
 import '../scss/style.scss';
-import * as adamfunctions from './modules/menuInit.js';
+import * as menufunctions from './modules/menuInit.js';
+import './modules/showMore.js';
 
 /* Меню бургер */
-adamfunctions.menuOpen();
-adamfunctions.menuClose();
+menufunctions.menuOpen();
+menufunctions.menuClose();

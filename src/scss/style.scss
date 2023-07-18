@@ -42,8 +42,9 @@ button {
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
-	background-color: $bgColor;
 	font-family: "TTLakes";
+	font-size: 14px;
+	position: relative;
 	// Прижимаем footer
 	> main {
 		flex: 1 1 auto;
@@ -54,19 +55,26 @@ button {
 	}
 }
 [class*="__container"] {
-	max-width: 1380px;
+	max-width: 1392px;
 	box-sizing: content-box;
 	margin: 0 auto;
 }
 body {
+	background-color: $bgColor;
 	// Скролл заблокирован
 	&.lock {
 		overflow: hidden;
 		touch-action: none;
 	}
 }
+.page {
+	@media (min-width: 1365.98px) {
+		margin-left: 326px;
+	}
+}
 // Подключение стилей общих элементов проекта
 @import "common.scss";
 // Подключение стилей отдельных блоков
 @import "blocks/header.scss";
+@import "blocks/about.scss";
 @import "blocks/footer.scss";
