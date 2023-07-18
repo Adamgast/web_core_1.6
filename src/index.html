@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<meta charset="UTF-8" />
-	<meta name="viewport"
-		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>
 		<%= htmlWebpackPlugin.options.title %>
@@ -12,7 +11,73 @@
 </head>
 
 <body>
-
+	<div class="wrapper">
+		<header class="header">
+			<span class="header__close-area"></span>
+			<div class="header__container">
+				<button type="button" class="header__open-burger">
+					<img src="img/header/burger.svg" alt="Открыть меню">
+				</button>
+				<a href="#" class="header__logo">
+					<img src="img/header/logo.svg" alt="Логотип">
+				</a>
+				<div class="header__actions">
+					<a href="#" class="header__action">
+						<img src="img/header/call.svg" alt="Позвонить">
+					</a>
+					<a href="#" class="header__action">
+						<img src="img/header/chat.svg" alt="Чат">
+					</a>
+					<a href="#" class="header__action">
+						<img src="img/header/profile.svg" alt="Профиль">
+					</a>
+					<a href="#" class="header__action">
+						<img src="img/header/repair.svg" alt="Оставить заявку">
+					</a>
+					<a href="#" class="header__action">
+						<img src="img/header/checkstatus.svg" alt="Статус ремонта">
+					</a>
+				</div>
+				<div class="header__fixed">
+					<div class="header__top">
+						<button type="button" class="header__close-burger"><img src="img/close.svg"
+								alt="Закрыть меню"></button>
+						<a href="#" class="header__logo-fixed"><img src="img/header/logo.svg" alt="Логотип"></a>
+						<a href="#" class="header__search"><img src="img/header/search.svg" alt="Поиск"></a>
+					</div>
+					<nav class="header__nav">
+						<ul class="header__list">
+							<li class="header__item"><a href="#" class="header__link active">Ремонт техники</a></li>
+							<li class="header__item"><a href="#" class="header__link">Услуги и сервисы</a></li>
+							<li class="header__item"><a href="#" class="header__link">Корпоративным клиентам</a></li>
+							<li class="header__item"><a href="#" class="header__link">Продавцам техники</a></li>
+							<li class="header__item"><a href="#" class="header__link">Партнерам</a></li>
+							<li class="header__item"><a href="#" class="header__link">Производителям</a></li>
+							<li class="header__item"><a href="#" class="header__link">Наши сервисные центры</a></li>
+							<li class="header__item"><a href="#" class="header__link">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="header__bottom">
+						<ul class="header__actions-fixed">
+							<li class="header__action-fixed"><a href="#" class="header__action-link"><img
+										src="img/header/call.svg" alt="Звонок"></a></li>
+							<li class="header__action-fixed"><a href="#" class="header__action-link"><img
+										src="img/header/chat.svg" alt="Чат"></a></li>
+							<li class="header__action-fixed"><a href="#" class="header__action-link">
+									<img src="img/header/profile.svg" alt="Профиль"></a></li>
+						</ul>
+						<a href="mailto:mail@cps.com" class="header__mail">mail@cps.com</a>
+						<a href="tel:+78008908900" class="header__phone">8 800 890 8900</a>
+						<ul class="header__langs">
+							<li class="header__lang active"><a href="#" class="header__lang-link">RU</a></li>
+							<li class="header__lang"><a href="#" class="header__lang-link">EN</a></li>
+							<li class="header__lang"><a href="#" class="header__lang-link">CH</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
 </body>
 
 </html>
