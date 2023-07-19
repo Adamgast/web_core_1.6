@@ -8,6 +8,7 @@
 	<title>
 		<%= htmlWebpackPlugin.options.title %>
 	</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -134,9 +135,99 @@
 					</div>
 				</div>
 			</section>
+			<section class="brands">
+				<h2 class="brands__title title">
+					<div class="title__container">Ремонт техники различных брендов</div>
+				</h2>
+				<div class="brands__container">
+					<div class="brands__slider slider swiper">
+						<div class="brands__wrapper swiper-wrapper">
+							<div class="brands__slide swiper-slide">
+								<img class="brands__logo" src="img/brands/apple.png" alt="apple">
+							</div>
+							<div class="brands__slide swiper-slide">
+								<img class="brands__logo" src="img/brands/bosch.png" alt="bosch">
+							</div>
+							<div class="brands__slide swiper-slide">
+								<img class="brands__logo" src="img/brands/hp.png" alt="hp">
+							</div>
+							<div class="brands__slide swiper-slide">
+								<img class="brands__logo" src="img/brands/lenova.png" alt="lenova">
+							</div>
+							<div class="brands__slide swiper-slide">
+								<img class="brands__logo" src="img/brands/samsung.png" alt="samsung">
+							</div>
+							<div class="brands__slide swiper-slide">
+								<img class="brands__logo" src="img/brands/bosch.png" alt="bosch">
+							</div>
+							<div class="brands__slide swiper-slide">
+								<img class="brands__logo" src="img/brands/view.png" alt="viewsonic">
+							</div>
+							<div class="brands__slide swiper-slide">
+								<img class="brands__logo" src="img/brands/sony.png" alt="sony">
+							</div>
+							<div class="brands__slide swiper-slide">
+								<img class="brands__logo" src="img/brands/acer.png" alt="acer">
+							</div>
+							<div class="brands__slide swiper-slide">
+								<img class="brands__logo" src="img/brands/hp.png" alt="hp">
+							</div>
+							<div class="brands__slide swiper-slide">
+								<img class="brands__logo" src="img/brands/lenova.png" alt="lenova">
+							</div>
+						</div>
+						<div class="brands__pagination swiper-pagination"></div>
+					</div>
+					<button type="button" class="brands__showmore">Показать все</button>
+				</div>
+			</section>
+			<section class="repair-devices">
+				<h2 class="repair-devices__title title">
+					<div class="title__container">Ремонт различных видов техники</div>
+				</h2>
+				<div class="repair-devices__container">
+					<div class="repair-devices__slider slider swiper">
+						<div class="repair-devices__wrapper swiper-wrapper">
+							<a href="#" class="repair-devices__slide swiper-slide">
+								<h3 class="repair-devices__sub-title">Ремонт ноутбуков </h2>
+							</a>
+							<a href="#" class="repair-devices__slide swiper-slide">
+								<h3 class="repair-devices__sub-title">Ремонт ноутбуков </h3>
+							</a>
+							<a href="#" class="repair-devices__slide swiper-slide">
+								<h3 class="repair-devices__sub-title">Ремонт ноутбуков </h3>
+							</a>
+							<a href="#" class="repair-devices__slide swiper-slide">
+								<h3 class="repair-devices__sub-title">Ремонт ноутбуков </h2>
+							</a>
+							<a href="#" class="repair-devices__slide swiper-slide">
+								<h3 class="repair-devices__sub-title">Ремонт ноутбуков </h3>
+							</a>
+							<a href="#" class="repair-devices__slide swiper-slide">
+								<h3 class="repair-devices__sub-title">Ремонт ноутбуков </h3>
+							</a>
+							<a href="#" class="repair-devices__slide swiper-slide">
+								<h3 class="repair-devices__sub-title">Ремонт ноутбуков </h3>
+							</a>
+							<a href="#" class="repair-devices__slide swiper-slide">
+								<h3 class="repair-devices__sub-title">Ремонт ноутбуков </h3>
+							</a>
+						</div>
+						<div class="repair-devices__pagination swiper-pagination"></div>
+					</div>
+					<button type="button" class="repair-devices__showmore">Показать все</button>
+				</div>
+			</section>
 		</main>
-		<footer class="footer"></footer>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__text">© 2019 CPS<br> Разработано командой Apesong </div>
+				<a href="#" class="footer__text">Политика конфиденциальности</a>
+				<div class="footer__text">Информация, размещенная на данной странице, не является публичной офертой</div>
+			</div>
+		</footer>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
 
 </html>

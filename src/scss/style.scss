@@ -59,6 +59,10 @@ button {
 	max-width: 1392px;
 	box-sizing: content-box;
 	margin: 0 auto;
+	padding: 0 16px;
+	@media (min-width: 767.98px) {
+		padding: 0 24px;
+	}
 }
 body {
 	background-color: $bgColor;
@@ -67,6 +71,9 @@ body {
 		overflow: hidden;
 		touch-action: none;
 	}
+}
+.wrapper__container {
+	padding: 0;
 }
 .page {
 	@media (min-width: 1365.98px) {
@@ -78,4 +85,6 @@ body {
 // Подключение стилей отдельных блоков
 @import "blocks/header.scss";
 @import "blocks/about.scss";
+@import "blocks/brands.scss";
+@import "blocks/repair-devices.scss";
 @import "blocks/footer.scss";

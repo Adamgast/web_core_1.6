@@ -6,10 +6,6 @@
 		padding-top: 20px;
 	}
 	&__container {
-		padding: 0 15px;
-		@media (min-width: 767.98px) {
-			padding: 0 24px;
-		}
 	}
 
 	&__top {
@@ -95,14 +91,14 @@
 	}
 
 	&__link {
-		color: #7e7e82;
+		color: $textSecond;
 		display: inline-block;
 		padding: 8px 13px;
 		transition: color 0.3s ease 0s;
 		&.active {
 			border-radius: 6px;
-			border: 2px solid #b8ffec;
-			background: #fff;
+			border: 2px solid $borderActive;
+			background: $light;
 		}
 	}
 
@@ -161,7 +157,7 @@
 			height: 25px;
 			top: 0;
 			left: 0;
-			background: url("../img/about/expand.svg") 0 0 no-repeat;
+			background: url("../img/expand.svg") 0 0 no-repeat;
 		}
 	}
 
@@ -186,7 +182,7 @@
 
 @media (any-hover: hover) {
 	.about__action:hover {
-		color: #ff3e79;
+		color: $btnColor;
 	}
 	.about__link:hover {
 		color: #0da09b;
