@@ -1,5 +1,8 @@
 # Webpack Static Site Starter Kit
 
+##Ссылка на сайт
+https://adamgast.github.io/web_core_1.6/
+
 ## Требования к проекту
 
 - [Node 14.18.3](https://nodejs.org/download/release/v14.18.3/)
