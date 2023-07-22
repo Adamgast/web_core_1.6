@@ -680,9 +680,21 @@ body {
           margin-right: 16px; }
         .about__action:not(:last-child) {
           margin-right: 32px; } }
-  @media (min-width: 1365.98px) {
-    .about__nav {
-      flex: 1 1 100%; } }
+  .about__nav {
+    position: relative; }
+    .about__nav::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background-image: linear-gradient(270deg, #f8f8f8 0.04%, rgba(248, 248, 248, 0) 100%); }
+    @media (min-width: 1365.98px) {
+      .about__nav {
+        flex: 1 1 100%; }
+        .about__nav::after {
+          display: none; } }
   .about__list {
     display: flex;
     align-items: center;
@@ -983,6 +995,178 @@ body {
           background: url(./static/expand.svg) no-repeat; }
         .repair-devices__showmore.active::before {
           transform: scale(1, -1); } }
+
+.service-price {
+  padding-bottom: 55px; }
+  @media (max-width: 767.98px) {
+    .service-price {
+      padding-bottom: 80px; } }
+  .service-price__title {
+    margin-bottom: 16px; }
+    @media (min-width: 767.98px) {
+      .service-price__title {
+        margin-bottom: 30px; } }
+  .service-price__slider {
+    padding-bottom: 40px; }
+    @media (min-width: 767.98px) {
+      .service-price__slider {
+        padding-bottom: 0;
+        width: 100%; } }
+  .service-price__header {
+    display: none; }
+    @media (min-width: 767.98px) {
+      .service-price__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px; }
+        .service-price__header .service-price__label {
+          margin-bottom: 0;
+          display: block;
+          text-align: center;
+          box-sizing: border-box; }
+          .service-price__header .service-price__label:first-child {
+            text-align: left;
+            padding-left: 16px;
+            width: 53%; }
+          .service-price__header .service-price__label:nth-child(2) {
+            padding-right: 45px;
+            width: 15%; }
+          .service-price__header .service-price__label:last-child {
+            text-align: left;
+            width: 32%; } }
+    @media (min-width: 991.98px) {
+      .service-price__header .service-price__label:first-child {
+        width: 40%; }
+      .service-price__header .service-price__label:nth-child(2) {
+        width: 30%; }
+      .service-price__header .service-price__label:last-child {
+        width: 30%; } }
+  @media (min-width: 767.98px) {
+    .service-price__wrapper {
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+      border-radius: 6px; } }
+  .service-price__slide {
+    padding: 16px;
+    width: 260px;
+    min-height: 200px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-sizing: border-box; }
+    @media (min-width: 767.98px) {
+      .service-price__slide {
+        border-radius: 0;
+        min-height: auto;
+        width: auto;
+        padding: 23px 0px;
+        margin: 0 16px;
+        border-bottom: 1px solid #eaeaea;
+        background-color: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        -moz-column-gap: 7px;
+             column-gap: 7px; }
+        .service-price__slide:last-child {
+          border-bottom: none; } }
+  .service-price__inner {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    justify-content: space-between;
+    -moz-column-gap: 5px;
+         column-gap: 5px; }
+    @media (min-width: 767.98px) {
+      .service-price__inner {
+        margin-top: 0;
+        width: 32%; } }
+    @media (min-width: 991.98px) {
+      .service-price__inner {
+        width: 30%; } }
+  .service-price__wrap {
+    font-size: 14px; }
+    .service-price__wrap:first-child {
+      margin-bottom: 16px; }
+      .service-price__wrap:first-child .service-price__content {
+        text-align: left; }
+    @media (min-width: 767.98px) {
+      .service-price__wrap {
+        width: 15%; }
+        .service-price__wrap:first-child {
+          width: 53%;
+          margin-bottom: 0; } }
+    @media (min-width: 991.98px) {
+      .service-price__wrap {
+        width: 30%; }
+        .service-price__wrap:first-child {
+          width: 40%; } }
+  .service-price__label {
+    padding: 0;
+    color: #7e7e82;
+    font-weight: 500;
+    line-height: 1.15;
+    margin: 0 0 4px; }
+    @media (min-width: 767.98px) {
+      .service-price__label {
+        display: none; } }
+  .service-price__content {
+    color: #1b1c21;
+    line-height: 1.3;
+    letter-spacing: 0.2px; }
+    @media (min-width: 767.98px) {
+      .service-price__content {
+        text-align: center; } }
+  .service-price__btn {
+    display: inline-block;
+    margin: 0;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    border-radius: 16px;
+    background-color: #ff3e79;
+    min-height: 32px;
+    padding: 4px 8px 4px 12px;
+    transition: background-color 0.5s ease 0s; }
+    .service-price__btn span {
+      background: url(./static/goside.svg) right no-repeat;
+      padding-right: 32px; }
+    @media (any-hover: hover) {
+      .service-price__btn:hover {
+        background-color: #f7346f; } }
+  .service-price__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+    height: 12px;
+    width: 12px;
+    margin: 0 6px;
+    background-color: gray; }
+    .service-price__pagination.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: #b5b6bc; }
+  .service-price__box {
+    color: #1b1c21;
+    margin-top: 4px; }
+    @media (min-width: 767.98px) {
+      .service-price__box {
+        margin-top: 24px; } }
+  .service-price__text {
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    margin: 0 0 16px; }
+  .service-price__link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.2px;
+    transition: color 0.5s ease 0s; }
+    .service-price__link span {
+      background: url(./static/more.svg) right no-repeat;
+      padding-right: 24px; }
+    @media (any-hover: hover) {
+      .service-price__link:hover {
+        color: #ff3e79; } }
 
 .footer {
   padding: 16px 0 20px;
