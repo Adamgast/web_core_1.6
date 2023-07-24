@@ -751,14 +751,14 @@ body {
     padding: 0; }
     .about__text:not(:last-child) {
       margin-bottom: 20px; }
-    .about__text .hidden {
-      display: none; }
-      @media (min-width: 767.98px) {
-        .about__text .hidden-1 {
-          display: inline; } }
-      @media (min-width: 1119.98px) {
-        .about__text .hidden-2 {
-          display: inline; } }
+  .about__hidden {
+    display: none; }
+    @media (min-width: 767.98px) {
+      .about__hidden-1 {
+        display: inline; } }
+    @media (min-width: 1119.98px) {
+      .about__hidden-2 {
+        display: inline; } }
   .about__read-more {
     display: block;
     margin-top: 16px;
