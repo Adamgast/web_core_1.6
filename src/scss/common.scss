@@ -9,3 +9,28 @@
 	margin: 0;
 	background: linear-gradient(-270deg, #f8f8f8 0%, #fff 100%);
 }
+
+.btn {
+	display: inline-block;
+	margin: 0;
+	color: $light;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 2;
+	letter-spacing: -0.15px;
+	text-transform: uppercase;
+	border-radius: 16px;
+	background-color: $btnColor;
+	min-height: 32px;
+	padding: 4px 8px 4px 12px;
+	transition: background-color 0.5s ease 0s;
+	span {
+		background: url("../img/goside.svg") right no-repeat;
+		padding-right: 32px;
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: #f7346f;
+		}
+	}
+}
