@@ -80,6 +80,9 @@
 		border-radius: 6px;
 		background-color: $light;
 		box-sizing: border-box;
+		&.swiper-slide {
+			height: auto;
+		}
 		@media (min-width: 767.98px) {
 			border-radius: 0;
 			min-height: auto;
