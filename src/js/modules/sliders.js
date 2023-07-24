@@ -26,10 +26,10 @@ export function mobileInitSlider() {
 					clickable: true,
 				},
 				breakpoints: {
-					360: {
+					460: {
 						slidesPerView: 1.5,
 					},
-					540: {
+					620: {
 						slidesPerView: 2,
 					},
 				},
