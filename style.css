@@ -1107,6 +1107,8 @@ body {
     border-radius: 6px;
     background-color: #ffffff;
     box-sizing: border-box; }
+    .service-price__slide.swiper-slide {
+      height: auto; }
     @media (min-width: 767.98px) {
       .service-price__slide {
         border-radius: 0;
