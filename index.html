@@ -23,18 +23,18 @@
 					<img src="img/header/logo.svg" alt="Логотип">
 				</a>
 				<div class="header__actions">
-					<a href="#" class="header__action">
-						<img src="img/header/call.svg" alt="Позвонить">
-					</a>
+					<button type="button" class="header__action" data-modal-button="modal-call">
+						<img src="img/header/call.svg" alt="Звонок">
+					</button>
 					<a href="#" class="header__action">
 						<img src="img/header/chat.svg" alt="Чат">
 					</a>
 					<a href="#" class="header__action">
 						<img src="img/header/profile.svg" alt="Профиль">
 					</a>
-					<a href="#" class="header__action">
+					<button type="button" class="header__action" data-modal-button="modal-feedback">
 						<img src="img/repair.svg" alt="Оставить заявку">
-					</a>
+					</button>
 					<a href="#" class="header__action">
 						<img src="img/checkstatus.svg" alt="Статус ремонта">
 					</a>
@@ -59,7 +59,8 @@
 					</nav>
 					<div class="header__bottom">
 						<ul class="header__actions-fixed">
-							<li class="header__action-fixed"><a href="#" class="header__action-link"><img src="img/header/call.svg" alt="Звонок"></a></li>
+							<li class="header__action-fixed"><button type="button" class="header__action-link" data-modal-button="modal-call">
+									<img src="img/header/call.svg" alt="Звонок"></button></li>
 							<li class="header__action-fixed"><a href="#" class="header__action-link"><img src="img/header/chat.svg" alt="Чат"></a></li>
 							<li class="header__action-fixed"><a href="#" class="header__action-link">
 									<img src="img/header/profile.svg" alt="Профиль"></a></li>
@@ -81,7 +82,7 @@
 					<div class="about__top">
 						<h1 class="about__title">Услуги и сервисы</h1>
 						<div class="about__actions">
-							<a href="#" class="about__action">
+							<a href="#" class="about__action" data-modal-button="modal-feedback">
 								<span>Оставить заявку</span>
 								<img src="img/repair.svg" alt="">
 							</a>
@@ -241,7 +242,7 @@
 										<h3 class="service-price__label">Срок</h3>
 										<div class="service-price__content">30 мин</div>
 									</div>
-									<a href="#" class="service-price__btn"><span>Заказать</span></a>
+									<a href="#" class="service-price__btn btn"><span>Заказать</span></a>
 								</div>
 							</div>
 							<div class="service-price__slide swiper-slide">
@@ -258,7 +259,7 @@
 										<h3 class="service-price__label">Срок</h3>
 										<div class="service-price__content">30-120 мин</div>
 									</div>
-									<a href="#" class="service-price__btn"><span>Заказать</span></a>
+									<a href="#" class="service-price__btn btn"><span>Заказать</span></a>
 								</div>
 							</div>
 							<div class="service-price__slide swiper-slide">
@@ -275,7 +276,7 @@
 										<h3 class="service-price__label">Срок</h3>
 										<div class="service-price__content">30-120 мин</div>
 									</div>
-									<a href="#" class="service-price__btn"><span>Заказать</span></a>
+									<a href="#" class="service-price__btn btn"><span>Заказать</span></a>
 								</div>
 							</div>
 							<div class="service-price__slide swiper-slide">
@@ -292,7 +293,7 @@
 										<h3 class="service-price__label">Срок</h3>
 										<div class="service-price__content">30-120 мин</div>
 									</div>
-									<a href="#" class="service-price__btn"><span>Заказать</span></a>
+									<a href="#" class="service-price__btn btn"><span>Заказать</span></a>
 								</div>
 							</div>
 							<div class="service-price__slide swiper-slide">
@@ -309,7 +310,7 @@
 										<h3 class="service-price__label">Срок</h3>
 										<div class="service-price__content">30-120 мин</div>
 									</div>
-									<a href="#" class="service-price__btn"><span>Заказать</span></a>
+									<a href="#" class="service-price__btn btn"><span>Заказать</span></a>
 								</div>
 							</div>
 						</div>
@@ -330,6 +331,43 @@
 				<div class="footer__text">Информация, размещенная на данной странице, не является публичной офертой</div>
 			</div>
 		</footer>
+	</div>
+	<div id="modal-feedback" data-modal class="modal hidden">
+		<div class="modal__window">
+			<div class="modal__content">
+				<button type="button" class="modal__btn-close" data-modal-close>
+					<img src="img/close.svg" alt="Закрыть модальное окно">
+				</button>
+				<h2 class="modal__title">Обратная связь</h2>
+				<form class="modal__form" action="" method="">
+					<input type="text" name="Имя" placeholder="Имя" class="modal__input">
+					<input type="tel" name="Номер" placeholder="Телефон" class="modal__input">
+					<input type="email" name="Почта" placeholder="Электронная почта" class="modal__input">
+					<textarea name="Имя" placeholder="Сообщение" class="modal__message"></textarea>
+					<div class="modal__copy">Нажимая “отправить”, вы даете согласие на <span>обработку персональных
+							данных</span>
+						и соглашаетесь с нашей <span>политикой конфиденциальности</span></div>
+					<button class="modal__btn btn" type="submit"><span>ОТПРАВИТЬ</span></button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="modal-call" data-modal class="modal hidden">
+		<div class="modal__window">
+			<div class="modal__content">
+				<button type="button" class="modal__btn-close" data-modal-close>
+					<img src="img/close.svg" alt="Закрыть модальное окно">
+				</button>
+				<h2 class="modal__title">Заказать звонок</h2>
+				<form class="modal__form" action="" method="">
+					<input type="tel" name="Номер" placeholder="Телефон" class="modal__input">
+					<div class="modal__copy">Нажимая “отправить”, вы даете согласие на <span>обработку персональных
+							данных</span>
+						и соглашаетесь с нашей <span>политикой конфиденциальности</span></div>
+					<button class="modal__btn btn" type="submit"><span>ОТПРАВИТЬ</span></button>
+				</form>
+			</div>
+		</div>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="./js/bundle.js"></script></body>

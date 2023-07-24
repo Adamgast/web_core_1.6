@@ -361,7 +361,6 @@ button {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  font-family: "TTLakes";
   font-size: 14px;
   position: relative; }
   .wrapper > main {
@@ -379,7 +378,8 @@ button {
       padding: 0 24px; } }
 
 body {
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  font-family: "TTLakes"; }
   body.lock {
     overflow: hidden;
     touch-action: none; }
@@ -401,6 +401,27 @@ body {
   padding: 15px 0;
   margin: 0;
   background: linear-gradient(-270deg, #f8f8f8 0%, #fff 100%); }
+
+.btn {
+  display: inline-block;
+  margin: 0;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  border-radius: 16px;
+  background-color: #ff3e79;
+  min-height: 32px;
+  padding: 4px 8px 4px 12px;
+  transition: background-color 0.5s ease 0s; }
+  .btn span {
+    background: url(./static/goside.svg) right no-repeat;
+    padding-right: 32px; }
+  @media (any-hover: hover) {
+    .btn:hover {
+      background-color: #f7346f; } }
 
 /*START======================Header======================================================================*/
 .header {
@@ -1118,26 +1139,6 @@ body {
     @media (min-width: 767.98px) {
       .service-price__content {
         text-align: center; } }
-  .service-price__btn {
-    display: inline-block;
-    margin: 0;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 2;
-    letter-spacing: -0.15px;
-    text-transform: uppercase;
-    border-radius: 16px;
-    background-color: #ff3e79;
-    min-height: 32px;
-    padding: 4px 8px 4px 12px;
-    transition: background-color 0.5s ease 0s; }
-    .service-price__btn span {
-      background: url(./static/goside.svg) right no-repeat;
-      padding-right: 32px; }
-    @media (any-hover: hover) {
-      .service-price__btn:hover {
-        background-color: #f7346f; } }
   .service-price__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
     height: 12px;
     width: 12px;
@@ -1208,6 +1209,96 @@ body {
         .footer__text:last-child {
           text-align: right;
           max-width: 330px; } }
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.96);
+  z-index: 100;
+  overflow-y: auto;
+  overflow-x: hidden;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  transition: all 0.5s ease 0s; }
+  .modal__window {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-height: 100%;
+    max-width: 440px;
+    background-color: #ffffff;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02); }
+  .modal__content {
+    padding: 24px 16px; }
+    @media (min-width: 767.98px) {
+      .modal__content {
+        padding: 40px 32px; } }
+  .modal__form {
+    display: flex;
+    flex-direction: column; }
+  .modal__btn-close {
+    margin: 0 0 40px;
+    padding: 0; }
+    @media (min-width: 767.98px) {
+      .modal__btn-close {
+        margin-bottom: 0;
+        position: absolute;
+        top: 32px;
+        left: -73px; } }
+  .modal__title {
+    padding: 0;
+    color: #1b1c21;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.34;
+    letter-spacing: -0.6px;
+    margin: 0 0 24px;
+    position: relative; }
+    .modal__title::before {
+      content: "";
+      position: absolute;
+      top: -20%;
+      left: -16px;
+      width: 4px;
+      height: 40px;
+      background: url(./static/line.svg) 0 0 no-repeat; }
+      @media (min-width: 767.98px) {
+        .modal__title::before {
+          left: -32px; } }
+  .modal__input {
+    height: 48px;
+    border-radius: 8px;
+    padding: 12px 16px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    margin: 0 0 16px; }
+  .modal__message {
+    resize: vertical;
+    min-height: 118px;
+    border-radius: 8px;
+    padding: 12px 16px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    margin: 0 0 16px; }
+  .modal__copy {
+    color: #7e7e82;
+    font-weight: 500;
+    line-height: 1.15;
+    font-size: 14px; }
+    .modal__copy span {
+      color: #ff3e79; }
+  .modal__btn {
+    margin: 24px 0 0;
+    align-self: end; }
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%); }
 
 
 /*# sourceMappingURL=style.css.map*/
