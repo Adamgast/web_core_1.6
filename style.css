@@ -551,7 +551,7 @@ body {
     .active .header__fixed {
       left: 0;
       visibility: visible; }
-    @media (min-width: 359.98px) {
+    @media (min-width: 767.98px) {
       .header__fixed {
         width: 320px;
         padding: 24px 24px 32px; } }
@@ -819,8 +819,7 @@ body {
       display: flex;
       flex-wrap: wrap;
       -moz-column-gap: 24px;
-           column-gap: 24px;
-      max-width: 1100px; } }
+           column-gap: 24px; } }
   .brands__slide {
     height: 72px;
     width: 240px;
@@ -849,6 +848,38 @@ body {
             visibility: visible;
             max-height: 100px; } }
     @media (min-width: 1015.98px) {
+      .brands__slide:nth-child(n + 7) {
+        opacity: 1;
+        visibility: visible;
+        max-height: 100px; }
+        .brands__slide:nth-child(n + 7).show {
+          margin-top: 0px; }
+      .brands__slide:nth-child(n + 9) {
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0; }
+        .brands__slide:nth-child(n + 9).show {
+          margin-top: 16px;
+          opacity: 1;
+          visibility: visible;
+          max-height: 100px; } }
+    @media (min-width: 1263.98px) {
+      .brands__slide:nth-child(n + 9) {
+        opacity: 1;
+        visibility: visible;
+        max-height: 100px; }
+        .brands__slide:nth-child(n + 9).show {
+          margin-top: 0px; }
+      .brands__slide:nth-child(n + 11) {
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0; }
+        .brands__slide:nth-child(n + 11).show {
+          margin-top: 16px;
+          opacity: 1;
+          visibility: visible;
+          max-height: 100px; } }
+    @media (min-width: 1365.98px) {
       .brands__slide:nth-child(n + 7) {
         opacity: 1;
         visibility: visible;
@@ -1051,7 +1082,7 @@ body {
             padding-left: 16px;
             width: 53%; }
           .service-price__header .service-price__label:nth-child(2) {
-            padding-right: 45px;
+            padding-right: 20px;
             width: 15%; }
           .service-price__header .service-price__label:last-child {
             text-align: left;
@@ -1106,6 +1137,8 @@ body {
     @media (min-width: 991.98px) {
       .service-price__inner {
         width: 30%; } }
+    .service-price__inner .service-price__wrap:first-child {
+      margin: 0; }
   .service-price__wrap {
     font-size: 14px; }
     .service-price__wrap:first-child {
